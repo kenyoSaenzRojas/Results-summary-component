@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(204, 202, 202, 0.192);
+    font-family: "Hanken Grotesk", sans-serif;
+    
+
+}
+.principal{
+
+
+}
+
+.contenedor{
+    margin-top:100px;
+    margin-left: 100px;
+    margin-right: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: 350px;
+
+}
+/* Morado */
+.morado{
+   
+    align-content: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.inicio, .medio, .final{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.inicio{
+    font-size: 12px;
+}
+.final{
+    margin-bottom:15px ;
+    width: 200px;
+}
+.final h2{
+    margin-bottom: 20px;
+}
+.medio{
+    width: 90px;
+    height: 100px;
+    align-content: center;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border: solid hsl(234, 85%, 45%) 1px
+}
+.medio span{
+    font-size: 10px;
+    color: hsl(251, 11%, 63%);
+    font-weight: 500;
+}
+
+/* Blanco */
+.blanco{
+    
+    display: grid;
+    background-color:hsl(0, 0%, 100%) ;
+    border-radius: 0 10px 10px 0;
+
+}
+.titulo{
+    margin: 20px 0 0 20px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.contenido{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+}
+.letras{
+    width: 250px;
+    margin-left: 10px;
+    
+}
+.numero{
+    
+} 
+.letras p{
+    color: hsl(253, 6%, 45%);
+    font-weight: 500;
+    
+}
+.letras p span{
+    color: hsla(256, 72%, 46%, 1);
+    font-weight: 700;
+}
+.letras p{
+    align-content: center;
+}
+
+
+.rojo .uno {
+    
+    display: flex;
+    color:hsl(0, 100%, 67%);
+    font-weight: 500;
+    justify-content:space-between;
+    
+}
+svg{
+    margin-right: 10px;
+}
+.amarillo .dos{
+    display: flex;
+    color:hsl(39, 100%, 56%) ;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.verde .tres{
+    display: flex;
+    color:hsl(166, 100%, 37%);
+    font-weight: 500;
+    justify-content: space-between;
+}
+.azul .cuatro{
+    display: flex;
+    color:hsl(234, 85%, 45%);
+    font-weight: 500;
+    justify-content: space-between;
+}
+/* colores */
+
+.rojo{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: solid rgb(244, 205, 205);
+    border-radius: 10px;
+    background-color: rgb(244, 205, 205);
+    padding: 5px ;
+}
+.amarillo{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: solid hsl(39, 52%, 80%);
+    border-radius: 10px;
+    background-color: hsl(39, 52%, 80%);
+    padding: 5px ;
+}
+.verde{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: solid hsl(166, 52%, 80%);
+    border-radius: 10px;
+    background-color: hsl(166, 52%, 80%);
+    padding: 5px ;
+}
+.azul{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: solid hsl(234, 52%, 80%);
+    border-radius: 10px;
+    background-color: hsl(234, 52%, 80%);
+    padding: 5px ;
+}
+
+
+.boton{
+    display: flex;
+    margin-left: 20px;
+}
+.boton button{
+    width: 75%;
+    height: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    background-color:hsl(224, 30%, 27%);
+    color:hsl(0, 0%, 100%) ;
+    border-radius: 15px;
+    margin-left: 10px;
+
+}
+
+@media only screen and (max-width: 375px){
+    .contenedor{
+        /* margin-top:100px;
+        margin-left: 100px;
+        margin-right: 50px;
+    
+        display: grid; */
+        grid-template-columns: repeat(1,250px);
+        grid-template-rows: 300px;
+    }
+    .boton button{
+    margin-bottom: 10px;
+    padding-bottom: 30px;  
+    }
+}
