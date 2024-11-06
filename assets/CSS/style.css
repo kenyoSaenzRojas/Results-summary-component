@@ -6,30 +6,45 @@
     box-sizing: border-box;
 }
 
+
 body{
+    
     background-color: rgba(204, 202, 202, 0.192);
     font-family: "Hanken Grotesk", sans-serif;
-    
+
+    font-size: 18px;
+
+
 
 }
 .principal{
-
-
+    width: 1000px;
+    height: 800px;
+    /* border: solid  violet; */
+    margin: 0 auto;
+    align-content: center;
+ 
 }
 
 .contenedor{
-    margin-top:100px;
+    width: 705px;
+    height: 455px;
+    margin: 0 auto;
+    align-content: center;
+    /* border: solid yellow; */
+
+    /* margin-top:100px;
     margin-left: 100px;
-    margin-right: 50px;
+    margin-right: 50px; */
 
     display: grid;
-    grid-template-columns: repeat(2,250px);
-    grid-template-rows: 350px;
+    grid-template-columns: repeat(2,350px);
+    grid-template-rows: 450px;
 
 }
 /* Morado */
 .morado{
-   
+       
     align-content: center;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     display: flex;
@@ -48,13 +63,17 @@ body{
 }
 .final{
     margin-bottom:15px ;
-    width: 200px;
+    width: 230px;
 }
 .final h2{
     margin-bottom: 20px;
 }
+.final p{
+    margin: 0px;
+    text-align:inherit;
+}
 .medio{
-    width: 90px;
+    width: 100px;
     height: 100px;
     align-content: center;
     border-radius: 50%;
@@ -71,24 +90,30 @@ body{
 .blanco{
     
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 250px ;
     background-color:hsl(0, 0%, 100%) ;
     border-radius: 0 10px 10px 0;
+    row-gap: 10px;
 
 }
 .titulo{
+    height: 30px;
     margin: 20px 0 0 20px;
     color: hsl(224, 30%, 27%);
     font-weight: 700;
 }
 .contenido{
-    margin: 20px;
+    margin:  0px 20px 0px 20px;
     display: grid;
     grid-template-columns: 40% 40%;
     justify-content: space-between;
 }
 .letras{
-    width: 250px;
+    width: 350px;
+    height: 150px;
     margin-left: 10px;
+    
     
 }
 .numero{
@@ -147,7 +172,7 @@ svg{
     border: solid rgb(244, 205, 205);
     border-radius: 10px;
     background-color: rgb(244, 205, 205);
-    padding: 5px ;
+    padding: 10px ;
 }
 .amarillo{
     width: 85%;
@@ -157,7 +182,7 @@ svg{
     border: solid hsl(39, 52%, 80%);
     border-radius: 10px;
     background-color: hsl(39, 52%, 80%);
-    padding: 5px ;
+    padding: 10px ;
 }
 .verde{
     width: 85%;
@@ -167,7 +192,7 @@ svg{
     border: solid hsl(166, 52%, 80%);
     border-radius: 10px;
     background-color: hsl(166, 52%, 80%);
-    padding: 5px ;
+    padding: 10px ;
 }
 .azul{
     width: 85%;
@@ -177,7 +202,7 @@ svg{
     border: solid hsl(234, 52%, 80%);
     border-radius: 10px;
     background-color: hsl(234, 52%, 80%);
-    padding: 5px ;
+    padding: 10px ;
 }
 
 
@@ -186,10 +211,10 @@ svg{
     margin-left: 20px;
 }
 .boton button{
-    width: 75%;
-    height: 25px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    width: 80%;
+    height: 45px;
+    padding-top: 20px;
+    padding-bottom: 35px;
     background-color:hsl(224, 30%, 27%);
     color:hsl(0, 0%, 100%) ;
     border-radius: 15px;
@@ -206,9 +231,37 @@ svg{
         display: grid; */
         grid-template-columns: repeat(1,250px);
         grid-template-rows: 300px;
+        margin-left: 50px ;
+        padding: 0; 
+        
+    }
+    .contenido{
+        margin: 0;
     }
     .boton button{
     margin-bottom: 10px;
     padding-bottom: 30px;  
+    }
+
+    .principal{
+        margin: 0;
+        padding: 0;
+        width: 375px;
+    }
+    body{
+        margin: 0;
+        padding: 0; 
+    }
+    .rojo, .amarillo, .azul, .verde{
+        margin-left:0;
+        padding-left: 0;
+        width: 230px;
+    }
+    .boton{
+        margin: 0;
+    }
+    .boton button{
+        width: 230px;
+
     }
 }
